@@ -45,14 +45,6 @@ img {
   height: auto;
 }
 
-#developed-by {
-  text-align: center;
-  background-color: #F47629;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  padding: 17px;
-}
-
 /*==================================================
  * Effect 1
  * ===============================================*/
@@ -90,6 +82,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.block-content-top {
+  margin-top: -30px;
+}
+
+.box.effect1 {
+  padding-top: 15px;
+}
+
+.about-us-heading {
+  padding: 70px 0 25px 0;
 }
 
 
@@ -1036,26 +1040,43 @@ header .header-top {
 }
 header .logo {
   position: relative;
-  overflow: hidden;
 }
 header .logo > a {
-  position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   max-width: 345px;
   margin: 0 auto;
+  text-decoration: none;
 }
-header .logo span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+header .logo .logo-bolt {
+  height: 55px;
+  width: auto;
+  flex-shrink: 0;
 }
-header .logo span img {
-  height: 100%;
-  max-width: none;
+.logo-words {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
-header .logo img {
-  max-width: 100%;
+.logo-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #252936;
+  letter-spacing: -0.5px;
+}
+.logo-sub {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #252936;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.logo-words--invert .logo-name,
+.logo-words--invert .logo-sub {
+  color: #fff;
 }
 header .phone {
   padding: 20px 0 0 0;
@@ -2466,9 +2487,16 @@ body.slide-active {
   margin-top: 10px;
   margin-bottom: 35px;
 }
-.page-footer .logo img {
-  max-width: 100%;
-  display: inline-block;
+.page-footer .logo > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.page-footer .logo .logo-bolt {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
 }
 .page-footer .copyright {
   color: #9c9fa9;
