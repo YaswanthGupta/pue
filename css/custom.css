@@ -1044,35 +1044,36 @@ header .logo {
 header .logo > a {
   display: flex;
   align-items: center;
-  gap: 8px;
-  max-width: 345px;
+  gap: 12px;
+  max-width: 420px;
   margin: 0 auto;
   text-decoration: none;
 }
 header .logo .logo-bolt {
-  height: 55px;
+  height: 78px;
   width: auto;
   flex-shrink: 0;
 }
 .logo-words {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 .logo-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
   color: #252936;
   letter-spacing: -0.5px;
 }
 .logo-sub {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   color: #252936;
   letter-spacing: 3px;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 .logo-words--invert .logo-name,
 .logo-words--invert .logo-sub {
@@ -1323,7 +1324,17 @@ body:not(.home) header.page-header {
     width: 100%;
   }
   header.page-header .logo > a {
-    max-width: 250px;
+    max-width: 280px;
+  }
+  header.page-header .logo .logo-bolt {
+    height: 60px;
+  }
+  header.page-header .logo .logo-name {
+    font-size: 36px;
+  }
+  header.page-header .logo .logo-sub {
+    font-size: 11px;
+    letter-spacing: 2px;
   }
   header.page-header .phone {
     padding: 0 0 15px;
